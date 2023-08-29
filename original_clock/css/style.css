@@ -1,0 +1,206 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Yusei+Magic&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+body {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pagecontainer {
+    display: flex;
+}
+
+aside {
+    margin: 40px 40px 0px 200px;
+}
+
+#restTime {
+    margin-left: 25px;
+    font-size: 30px;
+}
+
+p {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+
+    font-size: 50px;
+    background-color: beige;
+}
+
+
+.time_container {
+    display: flex;
+}
+
+.hour {
+    display: flex;
+}
+
+.min {
+    display: flex;
+}
+
+.sec {
+    display: flex;
+}
+
+.month {
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+}
+.open {
+    height: auto;
+}
+
+
+
+.container {
+    display: grid;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+
+/* hour */
+.hour .container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 800px;
+}
+
+.hour .box {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: rgba(193, 203, 203, 0.5);
+    border-radius: 20px;
+}
+
+.hour .active {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: aqua;
+    border-radius: 15px;
+}
+
+/* min */
+.min .container {
+    position: relative;
+    left: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 600px;
+}
+
+.min .box {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: rgba(193, 203, 203, 0.5);
+    border-radius: 10px;
+}
+
+.min .active {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+/* sec */
+.sec .container {
+    position: relative;
+    left: 35px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 400px;
+}
+
+.sec .box {
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: rgba(193, 203, 203, 0.5);
+    border-radius: 5px;
+}
+
+.sec .active {
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+/* calendar */
+.month .container {
+    position: relative;
+    margin-left: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.month .box {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(193, 203, 203, 0.5);
+    border-radius: 10px;
+}
+
+.month .active {
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+/* d9454d */
+
+.month .cal-title {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    font-size: 50px;
+    background-color: #f5f5dc;
+    color: #000;
+    /* background-color: #fedfe5;
+    color: #b63967; */
+}
+
+.caltoglle {
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+
+    font-size: 50px;
+    background-color: #f5f5dc;
+    color: #000;
+    border: solid 6px #85855a;
+    transition: 0.3s;
+}
+.caltoglle:active {
+    transform: scale(0.9);
+}
